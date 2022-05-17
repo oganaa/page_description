@@ -1,0 +1,282 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*=============== VARIABLES CSS ===============*/
+:root {
+  
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+  :root {
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  /* font-family: var(--body-font);
+  font-size: var(--normal-font-size); */
+}
+
+body {
+  /* background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .4s; */
+}
+
+h1, h2, h3 {
+  /* color: var(--title-color);
+  font-weight: var(--font-semibold); */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-height:50%;
+  max-width: 100%;
+  height: auto;
+ margin:0 auto;
+}
+
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in light theme
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.main-container{
+    height: 100vh;
+    width:100vw;
+    overflow: hidden;
+    background: #212D40;
+}
+.container {
+    max-width :1200px;
+  margin: auto;
+  overflow: hidden;
+}
+.container .main-title{
+    margin: 59px  auto 30px auto;
+text-align: center;
+width: 233px;
+
+height: 42px;
+
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 35px;
+line-height: 43px;
+background: linear-gradient(91.94deg, #F1A546 7.76%, #326ECD 96.57%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+color: transparent;
+
+}
+.container .main-title::before{
+    content: '';
+    position: absolute;
+ 
+    
+    top: 81px;
+    border-top: solid 2px;
+    
+    border-image: linear-gradient(90.1deg, #F1A546 -44.28%,  #326ECD 112.73%) 1;
+
+    right: calc(50% + 223px/2 + 2rem);
+
+    width: calc(215px + 7.6rem);
+
+}
+.container .main-text{
+    height: 84px;
+    margin: 0px  auto 48px auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    /* position: relative; */
+    font-size: 18px;
+    /* left: calc(50% - 50.4rem / 2); */
+    line-height: 22px;
+    max-width :50.4rem;
+    color: #FFFFFF;
+}
+.grid {
+  max-width :60rem;
+  margin: auto;
+}
+.grid-cards{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2.5rem;
+}
+
+.grid-cards::before {
+    content: '';
+    height: calc(15vh + 84px + 21px + 78px );
+    border-style: solid;
+  border-width:2px;
+  border-image: linear-gradient(90.1deg, #326ECD -44.28%, #F1A546 112.73%) 1;
+    left: calc(-2.6rem);
+    bottom: calc(45vh + 2.2rem);
+    width: 2.5rem;
+    border-right: 0;
+    position: absolute;
+    z-index:4;
+}
+.grid-cards-inner{
+  transition: 1s transform;
+  padding: 2rem 1.5rem;
+  width: 210px;
+  z-index: 5;
+  height: 30vh; 
+  display: flex;
+  background:  #212D40;
+  justify-content: space-around;
+  position: relative;
+  flex-direction: column;
+  color: #FFF;
+  border: 2px solid wheat;
+  border-radius: 1em;
+}
+.grid-cards-inner::after {
+    content: '';
+    height: 1.5px;
+    background-image: linear-gradient(90.1deg, #326ECD -44.28%, #F1A546 112.73%);  
+    right: calc(-2.5rem - 2px);
+    width: 2.5rem;
+    position: absolute;
+}
+.grid-cards-inner:hover{
+    transform: scale(1.2);
+}
+.grid-cards-inner:nth-child(8)::after {
+    content: '';
+    
+    display: none;
+}
+
+.grid-cards-inner:nth-child(4)::after {
+    content: '';
+    right: 50%;
+    bottom: calc(-2.5rem - 2px);
+    height: 2.5rem;
+    width: 1.5px;
+    /* border-left: 0px solid transparent ; */
+    background-image: linear-gradient(90.1deg, #326ECD -44.28%, #F1A546 112.73%);  
+}
+/* .grid-cards-inner:hover::after{
+    width: calc(2.5rem * 0.8);
+} */
+.grid-cards-inner::before {
+    /* content: '';
+   
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: linear-gradient(90.1deg, #326ECD -44.28%, #F1A546 112.73%); 
+    height: 1px; 
+    position: absolute;
+    z-index:-1;
+    border-radius:20px */
+}
+.grid-cards-inner p{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/* Active link */
+
+
+/* Change background header */
+
+
+/*=============== HOME ===============*/
+/*=============== BUTTONS ===============*/
+
+
+/*=============== ABOUT ===============*/
+
+
+/*=============== SKILLS ===============*/
+
+
+/*=============== SERVICES ===============*/
+
+
+/* Services modal */
+
+
+/*Active modal*/
+
+
+/*=============== WORK ===============*/
+
+
+/* Active item work*/
+
+
+/*=============== TESTIMONIAL ===============*/
+
+
+/* Swiper class */
+
+
+/*=============== CONTACT ===============*/
+
+
+/*=============== FOOTER ===============*/
+
+
+/*=============== SCROLL BAR ===============*/
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
