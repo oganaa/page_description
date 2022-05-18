@@ -87,10 +87,11 @@ img {
     height: 100vh;
     width:100vw;
     overflow: hidden;
+    position: relative;
     background: #212D40;
 }
 .container {
-    max-width :1200px;
+  max-width :1200px;
   margin: auto;
   overflow: hidden;
   height: 100vh;
