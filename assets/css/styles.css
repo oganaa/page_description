@@ -653,8 +653,107 @@ color: #212D40;
   border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
   color: #212D40;
 }
+.apply-container{
+position: relative;
+width: 100vw;
+height: 1779px;
+overflow: hidden;
+background: #F5F5F5;
+
+}
+.apply-container::before{
+  content: "";
+  position: absolute;
+width: 1400px;
+height: 1182px;
+left: 462px;
+top: 418px;
+overflow: hidden;
+  z-index: 1;
+  background: url("../img/apply.png") no-repeat center center/cover;
+  }
+.apply-container .apply-inner-container{
+margin:auto;
+
+display: block;
+max-width: 80vw;
+}
+.apply-title{
+  
+  margin: 5rem 0 5rem 0; 
+  font-family: 'Montserrat';
+font-style: normal;
+width: 561px;
+height: 50px;
+font-weight: 600;
+font-size: 35px;
+line-height: 50px;
 
 
+/* identical to box height, or 143% */
+  text-align: center;
+background: linear-gradient(89.79deg, #F1A546 -5.13%, #326ECD 86.47%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.apply-second-title{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: #212D40;
+margin: 1rem 0 2rem 0;
+}
+.about-desc{
+  width: 65vw;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+margin: 1.5rem 0;
+color: #212D40;
+}
+.about-orange-desc{
+  margin: 1.5rem 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  
+  color: #F1A546;
+}
+.square{
+  position: relative;
+  bottom: 1.5px;
+display: inline-block;
+margin-right: 1.5rem;
+width: 8px;
+height: 8px;
+background: #212D40;
+}
+.apply-inner-container ul{
+  /* list-style-type: square; */
+  
+}
+.apply-inner-container ul li {
+  padding: 1rem 0rem;
+  
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+
+
+color: #212D40;
+
+}
 @media only screen and (max-width: 700px)  {
   .inner-container{
     margin: auto;
