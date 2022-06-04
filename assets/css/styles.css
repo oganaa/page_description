@@ -357,23 +357,237 @@ color: transparent;
   padding: 0.8rem 2rem;
   margin: 0.5rem 4rem;
 }
+/* career - container  */
+/* basic container */
 
 
+/*  endees ehelj bga shuu  */
+.career-container{
+  height: 100vh;
+  width:100vw;
+  overflow: hidden;
+  background: url("../img/career-back.png")  center right/contain;
+  position: relative;
+  /* background: url('../img/career-back.png') no-repeat center/contain; */
+  /* background-size: cover; */
+}
+/* inner container is contained margin-left,margin-right both  inner items */
+.inner-container{
+  max-width: 85vw;
+  display: flex;
+  flex-direction: column;
+  margin:2rem 6rem 2rem 6rem;
+}
+.inner-container .career-title{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.1rem;
+  width: 20rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  margin:1rem 0 2rem 0;
+  /* identical to box height */
+  background: linear-gradient(90.09deg, #F1A546 -2.69%, #326ECD 106.39%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.inner-container .career-navbar{
+  margin:3rem 0 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+}
+.inner-container .career-navbar li{
+  margin-right: 4rem;
+  padding: 0.7rem 1.7rem;
+  align-items: center;
+  justify-content: center;
+}
+.inner-container .career-navbar li a{
+  
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  color: #212D40;
+}
+/* active navbar */
+.active-navbar{
+  padding: 0.7rem 1.7rem;border:2px solid #326ECD;
+}
+.table-container {
+  margin: 2rem 0 2rem 0 ;
+  border-width: 2px;
+  border-style: solid;
+  background: rgba(196, 196, 196, 0.01);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+backdrop-filter: blur(35px);
+  /* margin: auto; */
+  /* text-align: left; */
+  padding:2rem 3rem;
+  border-image: linear-gradient(90.1deg, #326ECD -44.28%, #F1A546 112.73%) 1;
+}
 
-/* .second-container::before{
-  content: '';
-overflow: hidden;
-position: absolute;
-width: 303.95px;
-height: 243.32px;
-right: 1rem;
 
-left: 400px;
-background-image: url('../../assets/img/page_photo1.png');
-top: 529.94px;
+table 			      { 
+  width: 100%;
+  border-spacing: 1; 
+  border-collapse: collapse; 
+  background:transparent;
+  /* border-radius:6px; */
+  overflow:hidden;
+ 
+  width:100%;
+  margin:0 auto;
+  position:relative;
+}
+table *  { position:relative }
+table td,th{
+  padding-left:1rem;
+}
 
-transform: rotate(-89.54deg);
-} */
+table tbody tr{
+  height:4.5rem; border-bottom:1.5px solid #C7C7C7;
+}
+
+table td th {
+  text-align:left;
+}
+table td th .l {
+  text-align:left;
+}
+table td th .c {
+  text-align:center;
+}
+table td th .r {
+  text-align:right;
+}
+table td th a:hover{
+  cursor: pointer;
+}
+.primary-text{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+/* identical to box height, or 141% */
+color: #326ECD;
+}
+.table-body-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  color: #212D40;
+}
+.table-second-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  
+  color: #212D40;
+}
+
+.table-third-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  color: #888888;
+}
+.table-forth-text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  color: #888888;
+  
+}
+
+
+@media only screen and (max-width: 700px)  {
+  .inner-container{
+    margin: auto;
+    display: block;
+    /* padding: 0; */
+  }
+  .inner-container ul li{
+    width: 100%;
+  }
+  .inner-container .career-navbar{
+    display: block;
+    text-align: center;
+    padding: 0;
+    /* flex-direction:column; */
+  }
+  .table-container{
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+    border:none;
+  }
+  table	{ display:block;}
+table > *,tr,td,th{
+  display:block ;
+}
+table tbody tr{
+  height:auto; padding:8px 0;
+} 
+table td{
+  text-align: center;
+  padding-left:0; margin-bottom:12px;
+}
+table td:last-child{
+  margin-bottom:0;
+}
+table td::before{
+  position:absolute;
+  font-weight:700;
+  width:40%;
+  left:10px;
+  top:0;
+}
+table td::nth-child(1):before {
+  content:"Code";
+} 
+table td::nth-child(2):before{content:"Stock";}
+table td::nth-child(3):before{content:"Cap";}
+table td::nth-child(4):before{content:"Inch";}
+table td::nth-child(5):before{ content:"Box Type";}
+      
+    
+}  	
+@media only screen and (max-width: 1268px) {
+  .inner-container{
+    margin: auto;
+    display: block;
+    /* padding: 0; */
+  }
+  .inner-container ul li{
+    width: 100%;
+  }
+  .inner-container .career-navbar{
+    display: block;
+    text-align: center;
+    padding: 0;
+    /* flex-direction:column; */
+  }
+  
+}  	
 /* Active link */
 
 
