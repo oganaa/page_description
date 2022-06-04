@@ -375,6 +375,7 @@ color: transparent;
 .inner-container{
   max-width: 85vw;
   display: flex;
+  margin: auto;
   flex-direction: column;
   margin:2rem 6rem 2rem 6rem;
 }
@@ -518,6 +519,141 @@ color: #326ECD;
   
 }
 
+/* main-career */
+.main-career{
+  height: 100vh;
+  width:100vw;
+  overflow: hidden;
+  background: url("../img/person-career.png") no-repeat center center/cover;
+  position: relative;
+}
+.main-career::after {
+  content: "";
+  background: linear-gradient(359.63deg, rgba(33, 45, 64, 0.79) 22.48%, rgba(33, 45, 64, 0) 141.18%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.main-career .inner-career{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
+    position: absolute;
+    width: 53rem;
+    height: 16.5rem;
+    right: 0;
+    backdrop-filter: blur(40px);
+    top: 17rem;
+    padding:2rem;
+    padding-left:3rem ;
+    padding-right:5rem ;
+    z-index: 2;
+}
+.main-career .inner-career .inner-career-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 1.5rem;
+  /* identical to box height */
+  text-align: right;
+  width: 302px;
+  height: 55px;
+  color: #FFFFFF;
+}
+.main-career .inner-career .orange-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: right;
+  width: 302px;
+  height: 55px;
+  background: linear-gradient(90.09deg, #F1A546 -2.69%, #fff 106.39%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.main-career .inner-career .inner-career-desc {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.advance-inner-container{
+  position: relative;
+  max-width: 40rem;
+  margin: auto;
+  top: 30%;
+
+}
+/* advanve/contact us */
+.advance-title{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 55px;
+text-align: center;
+
+color: #212D40;
+
+}
+.block{
+  display: block;
+}
+.andorean-title{
+  background: linear-gradient(90.09deg, #F1A546 -2.69%, #326ECD 106.39%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 55px;
+  text-align: center;
+}
+.advance-desc{
+margin: 2rem 0;
+font-family: 'Montserrat';
+width: 652px;
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 24px;
+/* or 160% */
+color: #212D40;
+}
+.goto-home-btn{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+
+  /* identical to box height */
+  transform: translate(-50%);
+  left: 50%;
+  position: absolute;
+  padding: 0.7rem 0.75rem;
+  border-width: 2px;
+  margin: 0;
+  border-style: solid;
+  border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
+  color: #212D40;
+}
+
 
 @media only screen and (max-width: 700px)  {
   .inner-container{
@@ -568,8 +704,28 @@ table td::nth-child(2):before{content:"Stock";}
 table td::nth-child(3):before{content:"Cap";}
 table td::nth-child(4):before{content:"Inch";}
 table td::nth-child(5):before{ content:"Box Type";}
-      
-    
+.main-career .inner-career{
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  left: 0;
+
+  backdrop-filter: blur(40px);
+  padding: 0.5rem !important;
+  z-index: 2;
+}
+.main-career .inner-career .inner-career-desc{
+ font-size: rem;
+  /* height: 60vh; */
+  margin: 0;
+  display: block;
+  backdrop-filter: blur(40px);
+  display: inline-block;
+  height: 100%;
+}
 }  	
 @media only screen and (max-width: 1268px) {
   .inner-container{
@@ -586,7 +742,22 @@ table td::nth-child(5):before{ content:"Box Type";}
     padding: 0;
     /* flex-direction:column; */
   }
+  .main-career .inner-career{
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
+    position: absolute;
+   
+    height: auto;
+    right: 0;
+    backdrop-filter: blur(40px);
   
+    padding:2rem;
+    padding-left:3rem ;
+    padding-right:5rem ;
+    z-index: 2;
+  }
+
 }  	
 /* Active link */
 
