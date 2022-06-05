@@ -365,6 +365,7 @@ color: transparent;
 .career-container{
   height: 100vh;
   width:100vw;
+  
   overflow: hidden;
   background: url("../img/career-back.png")  center right/contain;
   position: relative;
@@ -746,17 +747,188 @@ background: #212D40;
 }
 .apply-inner-container ul li {
   padding: 1rem 0rem;
-  
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 24px;
 /* or 160% */
-
-
 color: #212D40;
+}
+.apply-main-container{
+  height: 100vh;
+  width:100vw;
+  margin: auto;
+  overflow: hidden;
+  background: url("../img/career-back.png")  center right/contain;
+  position: relative;
+}
+.apply-inner-container-2{
+  margin:2rem;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-items: center;
+}
+.apply-title-2{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 43px;
+margin: 2rem;
+/* identical to box height */
+width: 200px;
+height: 43px;
+text-align: center;
+background: linear-gradient(90.09deg, #F1A546 -2.69%, #326ECD 106.39%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+.contact-container{
+  margin: 2rem;
+  width: 592.18px;
+  height: 694px;
+  background: rgba(196, 196, 196, 0.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(35px);
+  border-width: 2.5px;
+  border-style: solid;
+  border-image: linear-gradient(90.1deg, #F1A546 -44.28% , #326ECD 112.73%) 1;
+  display: flex;
+  flex-direction: column;
+  
+}
+.contact-container .contact-container-title{
+  margin: 2rem;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+color: #212D40;
+}
+.contact-container .text-dark{
+  font-family: 'Montserrat';
+  font-weight: 800;
+  color: #333;
+}
+.drag-area{
+  margin: 1rem 3rem 1rem 3rem;
+  border: 2px dashed #000000;
+  display: flex;
 
+  padding: 1rem;
+  align-items: center;
+  height: 226px;
+  justify-content: center;
+  flex-direction: column;
+}
+.drag-area.active{
+  border: 2px solid #fff;
+}
+.drag-area .icon{
+  width: 44px;
+  height: 43px;
+  margin: 0.5rem;
+}
+.drag-area header{
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  
+  color: #212D40;
+  
+}
+.drag-area p{
+  margin: 0.5rem 0;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+text-align: center;
+
+color: #344765;
+}
+.drag-area span{
+  font-size: 25px;
+  font-weight: 500;
+  color: #fff;
+  margin: 10px 0 15px 0;
+}
+.drag-area img{
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.contact-container .input-text{
+  display: inline-block;
+  margin: 1rem 3rem;
+  width: 214px;
+  text-indent: 8px;
+  height: 28px;
+  padding: 0 0.5rem;
+  background: rgba(196, 196, 196, 0.01);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(35px);
+}
+.contact-container .line{
+  margin:2rem 3rem;
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
+}
+.contact-container .checked-container{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.contact-container .checked-box{
+  margin:0 1rem;
+  border: 1px solid #333;
+  border-width: 3px 3px 3px 3px;
+
+  width: 18.76px;
+height: 17.86px;
+  
+}
+.contact-container p{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+
+font-size: 15px;
+line-height: 18px;
+color: #212D40;
+}
+
+
+.contact-container .home-btn{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  /* identical to box height */
+  align-self: center;
+  padding: 0.7rem 1.5rem;
+  border-width: 2px;
+  margin: 2rem 0;
+  border-style: solid;
+  border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
+  color: #212D40;
 }
 @media only screen and (max-width: 700px)  {
   .inner-container{
