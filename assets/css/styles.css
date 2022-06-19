@@ -930,6 +930,84 @@ color: #212D40;
   border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
   color: #212D40;
 }
+/* zuun taliin container */
+.apply-inner-container-2 .grid-area-1{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ 
+  grid-column-gap: 2rem;
+}
+.apply-inner-container-2  .grid-area{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1rem;
+  grid-column-gap: 1.2rem;
+}
+.apply-inner-container-2  .grid-area label{
+  padding: 0.5rem 0;
+  display: block;
+}
+.apply-inner-container-2  .grid-area input{
+  display: inline-block;
+text-indent: 8px;
+width: 200px;
+height: 28px;
+padding: 0 0.5rem;
+/* background: rgba(196, 196, 196, 0.01); */
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.082); */
+/* backdrop-filter: blur(10px); */
+}
+.apply-inner-container-2  .grid-area select{
+  display: inline-block;
+text-indent: 8px;
+height: 28px;
+width: 200px;
+padding: 0 0.5rem;
+/* background: rgba(196, 196, 196, 0.01); */
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.082); */
+/* backdrop-filter: blur(10px); */
+}
+
+/* baruub tal */
+.apply-inner-container-3{
+  margin:auto;
+  display: flex;
+  flex-direction:column;
+  max-width: 500px;
+}
+.apply-inner-container-4{
+  margin: 1rem 0;
+  padding:0 1rem 1rem 1rem;
+  border-left-width:3px;
+  border-left-style: solid;
+  border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+  justify-items: start;
+}
+.apply-inner-container-4 p{
+  line-height: 1.5;
+  font-size: 1rem;
+}
+.apply-inner-title{
+  margin: 0.5rem 0;
+  font-size: 4rem;
+}
+/* andorain class nemeerei */
+.apply-inner-subtitle{
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  text-align: center;
+  
+}
+.text-bold{
+  color:black;
+  font-weight: bold;
+}
+/*  apply - container class ijil uchir dahin ashiglaad  */
 @media only screen and (max-width: 700px)  {
   .inner-container{
     margin: auto;
