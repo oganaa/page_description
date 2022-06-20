@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <!-- <div class="apply-container">
+    <div class="apply-container">
       <div class="apply-inner-container">
         <h1 class="apply-title">Embedded Hardware Engineer</h1>
         <h1 class="apply-second-title">About the role</h1>
@@ -98,7 +98,7 @@
           </li>
         </ul>
       </div>
-    </div> -->
+    </div>
     <div class="apply-main-container">
       <div class="apply-inner-container-2">
         <h1 class="apply-title-2">Apply Now</h1>
@@ -108,9 +108,11 @@
           </h4>
           <div class="drag-area">
             <img class="icon" src="assets/img/apply-img.png" alt="apply" />
-            <header>Drag or click here to upload your CV</header>
+            <header onclick="doTrick()">
+              Drag or click here to upload your CV
+            </header>
             <p>Supported files: pdf, doc</p>
-            <input type="file" hidden />
+            <input type="file" id="file" hidden />
           </div>
 
           <input class="input-text" type="text" placeholder="my_cv.pdf" />
@@ -126,4 +128,28 @@
       </div>
     </div>
   </body>
+  <script>
+    function doTrick(contentType, multiple) {
+      let title = document.querySelector(".input-text");
+      console.log("title", title);
+      return new Promise((resolve) => {
+        let file;
+        let input = document.createElement("input");
+        input.type = "file";
+        // input.multiple = multiple;
+        input.accept = contentType;
+
+        input.onchange = () => {
+          let files = Array.from(input.files);
+          if (multiple) resolve(files);
+          else resolve(files[0]);
+
+          console.log("select", files[0].name);
+          title.value = files[0].name;
+        };
+
+        input.click();
+      });
+    }
+  </script>
 </html>
