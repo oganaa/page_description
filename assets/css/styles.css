@@ -1080,10 +1080,14 @@ font-weight: bold;
 align-self: start;
 padding: 0.5rem 2rem;
   border-width: 2px;
-  margin: 0;
+  margin: 1rem 0;
   border-style: solid;
   border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
 }
+.feature-sub-btn:hover{
+  cursor: pointer;
+}
+
 .feature-sub-container-2{
   display: flex;
   align-items: center;
@@ -1142,6 +1146,112 @@ line-height: 18px;
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+.footer-container{
+  overflow: hidden;
+  position: relative;
+  height: 578px;
+  width: 100vw;
+  background-color: #f5f5f5;
+}
+
+.footer-image-1{
+position: absolute;
+width: 133px;
+height: 107px;
+right: 2rem;
+top: 2.5rem;
+/* transform: rotate(-90deg); */
+  background: url("../img/footer1.png") no-repeat center right/contain;
+}
+.footer-image-2{
+  position: absolute;
+  width: 85.3px;
+  height: 68.55px;
+  left: 171.55px;
+  top: 433px;
+  transform: rotate(89.9deg);
+  background: url("../img/footer1.png") no-repeat center right/contain;
+}
+.footer-grid
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 7rem 3rem;
+}
+.footer-flex{
+  position: relative;
+  margin-left: 8rem;
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 4rem; */
+  align-items: flex-start;
+  border-right-width:2px;
+  /* border-width: 2px; */
+    border-right-style: solid;
+   height: 18rem;
+    border-image: 
+    linear-gradient(#326ECD, #F1A546) 0 100%;
+  justify-content: start;
+}
+.footer-flex:nth-child(4){
+  position: relative;
+  border:none;
+}
+.footer-title{
+  /* width: 100px; */
+height: 24px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+text-align: justify;
+background: linear-gradient(90.16deg, #F1A546 -3.25%, #326ECD 103.06%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.footer-desc{
+  text-align: justify;
+  margin-top: 2rem;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+text-align: center;
+
+color: #212D40;
+}
+.icon-flex{
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+
+.footer-icons{
+  margin-right: 2rem;
+  
+ /* margin: 0 0 0 ; */
+  /* margin: 0 2rem; */
+
+}
+.footer-icons img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.image-footer{
+  position: absolute;
+  /* width: 356px; */
+  top: 5rem;
+  left: -1.5rem;
 }
 /*  apply - container class ijil uchir dahin ashiglaad  */
 @media only screen and (max-width: 700px)  {
@@ -1214,6 +1324,17 @@ table td::nth-child(5):before{ content:"Box Type";}
   backdrop-filter: blur(40px);
   display: inline-block;
   height: 100%;
+}
+.feature-container{
+  overflow: auto;
+  margin: 0;
+}
+.margin{
+  margin: 0;
+}
+.feature-grid{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 }  	
 @media only screen and (max-width: 1268px) {
