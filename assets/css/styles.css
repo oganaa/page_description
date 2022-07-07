@@ -1022,9 +1022,25 @@ padding: 0 0.5rem;
 }
 .margin-container{
   margin: 3rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 10px;
-  
+  position: relative;
+}
+.margin-container::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px; 
+  border: 3px solid transparent;
+  background: linear-gradient(45deg,#F1A546,#326ECD) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
 }
 .feature-grid{
   /* width: 100%; */
