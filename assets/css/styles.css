@@ -1014,12 +1014,17 @@ padding: 0 0.5rem;
 .feature-container{
   height: 100vh;
   width:100vw;
-  
   overflow: hidden;
   background: url("../img/career-back.png")  center right/contain;
   position: relative;
   /* background: url('../img/career-back.png') no-repeat center/contain; */
   /* background-size: cover; */
+}
+.margin-container{
+  margin: 3rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  
 }
 .feature-grid{
   /* width: 100%; */
@@ -1027,12 +1032,15 @@ padding: 0 0.5rem;
   grid-template-columns: 1fr 1fr;
 }
 .feature-sub-container-1{
-  margin:0 3.5rem;
-
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  /* margin:0 3.5rem; */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
   flex-direction: column;
 }
 .feature-sub-title{
@@ -1079,10 +1087,10 @@ order: 0;
 font-weight: bold;
 align-self: start;
 padding: 0.5rem 2rem;
-  border-width: 2px;
-  margin: 1rem 0;
-  border-style: solid;
-  border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
+border-width: 2px;
+margin: 1rem 0;
+border-style: solid;
+border-image: linear-gradient(90.1deg, #f08706 -44.28% , #326ECD 112.73%) 1;
 }
 .feature-sub-btn:hover{
   cursor: pointer;
@@ -1097,7 +1105,7 @@ padding: 0.5rem 2rem;
   height: 70vh;
   border-right-width:2px;
   /* border-width: 2px; */
-    border-style: solid;
+    border-left-style: solid;
    
     border-image: 
     linear-gradient(#326ECD, #F1A546) 0 100%;
@@ -1105,7 +1113,7 @@ padding: 0.5rem 2rem;
 .image-card{
   position: relative;
   margin: 2rem 0rem;
-  width: 24rem;
+  width: 26rem;
   height: auto;
 }
 .margin{
@@ -1253,6 +1261,16 @@ color: #212D40;
   /* width: 356px; */
   top: 5rem;
   left: -1.5rem;
+}
+.detail-title{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  
+  color: #212D40;
 }
 /*  apply - container class ijil uchir dahin ashiglaad  */
 @media only screen and (max-width: 700px)  {
