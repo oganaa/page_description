@@ -1,0 +1,235 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*=============== VARIABLES CSS ===============*/
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  /* font-family: var(--body-font);
+  font-size: var(--normal-font-size); */
+}
+
+body {
+  /* background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .4s; */
+}
+
+h1, h2, h3 {
+  /* color: var(--title-color);
+  font-weight: var(--font-semibold); */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.case-study-container{
+    height: 659px;
+    background: #FFFFFF;
+    position: relative;
+    padding: 6rem 11rem 4.75rem 6.5rem;
+}
+.case-study-container .case-study-main-2{
+background: linear-gradient(99.7deg, #212D40 37.12%, #000000 141.37%);
+box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.15);
+/* border-radius: 20px; */
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+/* border-top-right-radius: 20px; */
+border-top-left-radius: 20px;
+/* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+height: 406px;
+width: 100%;
+}
+.case-study-main-1 .case-study-text{
+
+    height: 80px;
+    clip-path: polygon(100% 0, 94% 83%, 92% 91%, 89% 97%, 86% 100%, 3% 100%, 0 100%, 0 94%, 0 0);
+    background-color:  #FFFFFF;
+    width: 300px;
+    border-bottom-right-radius: 20px;
+}
+.case-study-main-1 .case-study-text p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 43px;
+    /* identical to box height */
+    
+    text-align: center;
+    color: #212D40;
+    }
+.case-study-container .case-study-main-1{
+    
+    background: linear-gradient(99.7deg, #212D40 37.12%, #000000 141.37%);
+    box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.15);
+    /* border-radius: 20px; */
+    border-bottom-left-radius: 20px;
+    /* border-bottom-right-radius: 20px; */
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+    height: 80px;
+    width: 100%;
+    }
+
+.case-study-container .case-study-main-2 .case-grid{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+}
+.case-grid-main-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 356px;
+}
+
+.case-grid-main-img img{
+    object-fit: contain;
+    width: 90%;
+    height: 100%;
+}
+.case-grid-main{
+    justify-content: space-between;
+    margin: 2rem 3rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.case-grid-main .case-title{
+color: white;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 2rem;
+line-height: 37px;
+}
+.case-grid-main .orange-title{
+    color: #F1A546;
+}
+.case-grid-main div img{
+    width: 0.7rem;
+    height: 0.7rem;
+    /* list-style: url('../img/list.png'); */
+} 
+.case-grid-img-1{
+    display:none;
+}
+.case-grid-main div{
+    /* margin: 0; */
+    /* padding: 0; */
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+.case-grid-main div p{
+    width: 373px;
+    display: flex;
+    /* flex-direction: row;
+    align-items: flex-start;
+    justify-content: start; */
+    padding-left: 1rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    /* list-style: url('../img/list.png'); */
+} 
+.case-grid-main .case-button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    align-self: center;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #FFFFFF;
+        padding: 0.8rem 2rem;
+        border-width: 2px;
+        border-style: solid;
+    
+        border-image: linear-gradient(90.1deg, #326ECD -44.28%, #F1A546 112.73%) 1;
+        /* width: 468px; */
+      
+}
+
+@media only screen and (max-width: 768px){
+    .case-study-container{
+        height: 834px;
+        padding: 3rem 3rem 3rem 3rem;
+    }
+    .case-study-container .case-study-main-2 {
+        padding: 0 2rem 0 2rem;
+        height: 806px;
+    }
+    .case-study-container .case-study-main-2 .case-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .case-grid-main{
+        align-items: center;
+        justify-content: space-around;
+        height: 806px;
+        margin: 0;
+    }
+    .case-grid-main .case-title{
+        text-align: center;
+    }
+  
+    .case-grid-img-1{
+        /* display: flex; */
+        display: inline-block;
+        width: 475px !important;
+         /* display: block; */
+        /* width: 475px; */
+        /* height: 239px !important; */
+    }
+    .case-grid-img-1 img{
+        /* display: flex; */
+        display: inline-block;
+        width: 475px !important;
+         /* display: block; */
+        /* width: 475px; */
+        height: 220px !important;
+    }
+ 
+    .case-grid-main-img{
+        display: none;
+    }
+    /* case-study-container */
+}
+/* .case-study-container .case-study-main-1{
+  
+    clip-path: view-box;
+ 
+    background: linear-gradient(99.7deg, #212D40 37.12%, #000000 141.37%);
+    box-shadow: 0px 9px 20px rgba(0, 0, 0, 0.15);
+  
+    height: 100px;
+
+} */
